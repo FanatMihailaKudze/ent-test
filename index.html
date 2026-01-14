@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Задачки по инглишу</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>Алина я верю в тебя</h1>
+
+  <div id="menu">
+    <button onclick="loadTest('test/question.js')">
+      Английский лексико и грамматика
+    </button>
+    <button onclick="loadTest('test/reading.js')">
+      Чтение на английском
+    </button>
+    <button onclick="window.location.href='test/textToReading.html'">
+      Тексты на английском
+    </button>
+  </div>
+
+  <div id="test" class="hidden">
+    <p id="progress"></p>
+    <p id="question"></p>
+    <div id="answers"></div>
+
+    <button class="secondary" onclick="backToMenu()">
+      ← Назад к выбору
+    </button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
